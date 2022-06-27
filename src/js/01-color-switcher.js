@@ -11,9 +11,6 @@ btnStart.addEventListener("click", () => {
   }, 1000);
 });
 
-
-
-
 btnStop.addEventListener("click", () => {
     btnStart.removeAttribute('disabled');
   clearInterval(timerId);
@@ -22,5 +19,4 @@ btnStop.addEventListener("click", () => {
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
-
 
