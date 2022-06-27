@@ -16,3 +16,34 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.timer {
+  display: flex;
+  margin-top: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.value {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 32px;
+  font-family: Trade Winds;
+  color: #ef5350;
+}
+
+.label {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 32px;
+  color: #ef5350;
+  font-family: Trade Winds;
+}
+button {
+  background-color: #ef5350;
+  color: #fafafa;
+}
