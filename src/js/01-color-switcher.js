@@ -11,6 +11,9 @@ btnStart.addEventListener("click", () => {
   }, 1000);
 });
 
+
+
+
 btnStop.addEventListener("click", () => {
     btnStart.removeAttribute('disabled');
   clearInterval(timerId);
