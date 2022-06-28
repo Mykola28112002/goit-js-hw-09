@@ -5,6 +5,7 @@ const btnStop = document.querySelector('[data-stop]');
 
 btnStart.addEventListener("click", startColor);
 btnStop.addEventListener("click", stopColor );
+let timerId;
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
@@ -16,10 +17,8 @@ function startColor() {
     bodyEl.style.backgroundColor = hexColor;
   }, 1000);
 }
-
 function stopColor() {
-  btnStart.removeAttribute('disabled');
-  const id = timerId;
-  clearInterval(id);
+    btnStart.removeAttribute('disabled');
+  clearInterval(timerId);
 }
 
